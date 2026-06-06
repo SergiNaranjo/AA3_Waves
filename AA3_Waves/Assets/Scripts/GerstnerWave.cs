@@ -136,6 +136,7 @@ public class GerstnerWave : MonoBehaviour
     /// <summary>
     /// Modo Gerstner
     /// </summary>
+    /// La maya se desplaza en xyz
     private Vector3 EvaluateGerstner(WaveParams w, Vector3 pos, float t)
     {
         if (w.waveLength <= 0f || w.amplitud <= 0f) return Vector3.zero;
@@ -150,14 +151,16 @@ public class GerstnerWave : MonoBehaviour
         float sinT = Mathf.Sin(theta);
         float cosT = Mathf.Cos(theta);
 
-        float dx = (w.steepness * w.amplitud / k) * dir.x * cosT;
-        float dz = (w.steepness * w.amplitud / k) * dir.y * cosT;
+        float amp_k = w.steepness * w.amplitud / k;
+        float dx = (amp_k) * dir.x * cosT;
+        float dz = (amp_k) * dir.y * cosT;
         float dy = w.amplitud * sinT;
 
         return new Vector3(dx, dy, dz);
     }
 
     /// Modo Sinusoidal puro
+    /// La maya solo sube y baja
     private Vector3 EvaluateSinusoidal(WaveParams w, Vector3 pos, float t)
     {
         if (w.waveLength <= 0f || w.amplitud <= 0f) return Vector3.zero;
