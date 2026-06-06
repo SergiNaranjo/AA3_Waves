@@ -623,22 +623,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2628af3398d80c849ad0f61905b6dd36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GerstnerWave
+  waveMode: 1
   waves:
   - amplitud: 0.3
     waveLength: 4
     direction: {x: 1, y: 0}
     steepness: 0.5
     phase: 0
+    frequency: 0.5
   - amplitud: 0.15
     waveLength: 2.5
     direction: {x: 0.7, y: 0.7}
     steepness: 0.4
     phase: 1.2
+    frequency: 0.8
   - amplitud: 0.1
     waveLength: 1.5
     direction: {x: -0.5, y: 0.8}
     steepness: 0.3
     phase: 2.5
+    frequency: 1.1
   gravity: 9.81
   active: 1
 --- !u!64 &1526183750
