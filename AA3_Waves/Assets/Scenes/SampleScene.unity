@@ -783,20 +783,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GerstnerWave
   waveMode: 0
   waves:
-  - amplitud: 1.1
-    waveLength: 4
+  - amplitud: 0.82
+    waveLength: 1.7
     direction: {x: 1, y: 0}
-    steepness: 0.5
+    steepness: 0.758
     phase: 0
     frequency: 0.5
-  - amplitud: 1.2
-    waveLength: 2.5
+  - amplitud: 1
+    waveLength: 1.06
     direction: {x: 0.7, y: 0.7}
-    steepness: 0.4
+    steepness: 0.565
     phase: 1.2
     frequency: 0.8
-  - amplitud: 1.69
-    waveLength: 1.5
+  - amplitud: 0.56
+    waveLength: 0.9
     direction: {x: -0.5, y: 0.8}
     steepness: 0.3
     phase: 2.5
@@ -966,20 +966,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GerstnerWave
   waveMode: 1
   waves:
-  - amplitud: 3.16
-    waveLength: 4
+  - amplitud: 0.66
+    waveLength: 1.13
     direction: {x: 1, y: 0}
     steepness: 0.5
     phase: 0
     frequency: 0.5
-  - amplitud: 2.8
-    waveLength: 2.5
+  - amplitud: 0.4
+    waveLength: 0.5
     direction: {x: 0.7, y: 0.7}
     steepness: 0.4
     phase: 1.2
     frequency: 0.8
-  - amplitud: 3.47
-    waveLength: 1.5
+  - amplitud: 0.73
+    waveLength: 0.5
     direction: {x: -0.5, y: 0.8}
     steepness: 0.3
     phase: 2.5
